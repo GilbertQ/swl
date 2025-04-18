@@ -66,19 +66,15 @@
   
   .segment-text {
     position: absolute;
-    left: 100%;
+    left: 0;  /* Start from the left edge */
     top: 50%;
     transform-origin: left center;
-    color: white;
+    color: blueviolet;
     font-weight: bold;
     font-size: 14px;
     white-space: nowrap;
     pointer-events: none;
-  }
-  /* For better visibility on dark segments, you could also add: */
-  .segment:nth-child(odd) .segment-text {
-    background-color: white;
-    color: black;
+    transform: translateX(100%);  /* Move right by container width */
   }
   
   .pointer {
