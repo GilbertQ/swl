@@ -82,7 +82,7 @@
     left: 0;
     top: 50%;
     transform-origin: left center;
-    color: white;
+    color: red;
     font-weight: bold;
     font-size: 14px;
     white-space: nowrap;
@@ -91,7 +91,7 @@
   }
   
   .segment:nth-child(odd) .segment-text {
-    background-color: white;
+    background-color: blue;
     color: black;
   }
   .pointer {
