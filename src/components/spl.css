@@ -66,17 +66,34 @@
   
   .segment-text {
     position: absolute;
-    left: 0;  /* Start from the left edge */
+    left: 0;
     top: 50%;
     transform-origin: left center;
-    color: blueviolet;
+    color: white;
     font-weight: bold;
     font-size: 14px;
     white-space: nowrap;
     pointer-events: none;
-    transform: translateX(100%);  /* Move right by container width */
+    margin-left: 300px;  /* Container width */
   }
   
+  .segment-text {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform-origin: left center;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    white-space: nowrap;
+    pointer-events: none;
+    margin-left: 300px;  /* Container width */
+  }
+  
+  .segment:nth-child(odd) .segment-text {
+    background-color: white;
+    color: black;
+  }
   .pointer {
     position: absolute;
     top: -10px;
